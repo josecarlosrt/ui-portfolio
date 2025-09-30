@@ -9,12 +9,12 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: 'mostler',
-    title: 'Web Design',
-    tag: 'Branding • Identity • Brochure',
-    image: '../images/one.jpg',
-    color: '#b2ff59',
-    url: '#'
+    id: 'twin-oaks',
+    title: 'Web Design & Branding',
+    tag: 'Branding • Identity • Web Design',
+    image: '../images/projects/twin-oaks.png',
+    color: '#59D6FF',
+    url: '/projects/twin-oaks'
   },
   {
     id: 'swearing',
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     title: 'Bang & Olufsen',
     tag: 'Product • Photo',
     image: '../images/two.jpg',
-    color: '#00e676',
+    color: '#B159FF',
     url: '#'
   },
   {
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     title: 'Bang & Olufsen',
     tag: 'Product • Photo',
     image: '../images/three.jpg',
-    color: '#00e676',
+    color: '#b2ff59',
     url: '#'
   }
 ]

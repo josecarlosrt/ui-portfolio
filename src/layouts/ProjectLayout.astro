@@ -1,0 +1,60 @@
+---
+import "../styles/global.css";
+
+const {
+  title,
+  date,
+  role,
+  client,
+  tools = [],
+  images = [],
+  summary
+} = Astro.props;
+---
+<body class="bg-neutral-900">
+<section class="mx-auto max-w-4xl px-6 py-14 text-white">
+  <!-- Eyebrow + título -->
+  <p class="mb-2 text-xs uppercase tracking-[0.2em] text-emerald-400">
+    Case Study
+  </p>
+  <h1 class="text-4xl font-extrabold leading-tight md:text-5xl
+             bg-gradient-to-r from-lime-400 via-emerald-400 to-lime-500 bg-clip-text text-transparent">
+    {title}
+  </h1>
+
+  <!-- Subheading -->
+  <p class="mt-2 text-sm text-white/60">
+    {date}{role && ` · ${role}`}{client && ` · ${client}`}
+  </p>
+
+  <!-- Chips de tools (opcional) -->
+  {tools.length > 0 && (
+    <ul class="mt-4 flex flex-wrap gap-2">
+      {tools.map((t: unknown) => (
+        <li class="rounded-full border border-white/15 px-3 py-1 text-xs text-white/70">{t}</li>
+      ))}
+    </ul>
+  )}
+
+  <!-- Grid 2x2 top -->
+  {images.length > 0 && (
+    <div class="mt-8 grid grid-cols-2 gap-3 md:gap-4">
+      {images.slice(0, 4).map((src: string | null | undefined) => (
+        <img src={src} alt={title} class="aspect-square w-full rounded-xl object-cover" />
+      ))}
+    </div>
+  )}
+
+  <!-- Summary corto arriba (opcional) -->
+  {summary && (
+    <p class="mt-8 text-base leading-relaxed text-white/80">
+      {summary}
+    </p>
+  )}
+
+  <!-- Contenido del MDX -->
+  <article class="prose prose-invert mt-8 max-w-none prose-headings:text-white prose-a:text-emerald-400">
+    <slot />
+  </article>
+</section>
+</body>
