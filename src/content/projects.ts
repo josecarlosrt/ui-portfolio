@@ -17,12 +17,12 @@ export const projects: Project[] = [
     url: '/projects/twin-oaks'
   },
   {
-    id: 'swearing',
-    title: 'The Swearing Collection',
-    tag: 'Branding • Editorial',
-    image: '../images/two.jpg',
+    id: 'burger-bar',
+    title: 'The Burger Bar',
+    tag: 'Branding • Web Design',
+    image: '../images/projects/burger-bar.png',
     color: '#ff1744',
-    url: '#'
+    url: '/projects/burger-bar'
   },
   {
     id: 'bo',
