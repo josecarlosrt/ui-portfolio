@@ -6,12 +6,11 @@ const { title, date, role, client, tools = [], images = [], summary } = fm;
 ---
 <section class="bg-neutral-900">
   <section class="mx-auto max-w-4xl px-6 py-14 text-white">
-    <p class="mb-2 text-xs uppercase tracking-[0.2em] text-emerald-400">Case Study</p>
     <h1 class="text-4xl font-extrabold leading-tight md:text-5xl bg-gradient-to-r from-lime-400 via-emerald-400 to-lime-500 bg-clip-text text-transparent pb-1">
       {title}
     </h1>
     <p class="mt-4 text-sm text-white/60">
-      {date}{role && ` · ${role}`}{client && ` · ${client}`}
+      {date}{role && ` - ${role}`}{client && ` - ${client}`}
     </p>
 
     {tools.length > 0 && (
@@ -25,7 +24,7 @@ const { title, date, role, client, tools = [], images = [], summary } = fm;
     {images.length > 0 && (
       <div class="mt-8 grid grid-cols-2 gap-3 md:gap-4">
         {images.slice(0, 4).map((src: string) => (
-          <img src={src} alt={title} class="aspect-square w-full rounded-xl object-cover" />
+          <img src={src} alt={title} class="aspect-3/2 w-full rounded-xl object-cover" />
         ))}
       </div>
     )}
@@ -34,8 +33,18 @@ const { title, date, role, client, tools = [], images = [], summary } = fm;
       <p class="mt-8 text-base leading-relaxed text-white/80">{summary}</p>
     )}
 
-    <article class="prose prose-invert mt-8 max-w-none prose-headings:text-white prose-a:text-emerald-400">
+    <article class="prose prose-invert mt-4 max-w-none prose-headings:text-white prose-a:text-emerald-400">
       <slot />
     </article>
+      <!-- Botón de regreso -->
+  <div class="mt-12 text-center">
+    <a
+      href="/"
+      class="inline-block rounded-full border border-lime-400 px-6 py-2 lime-emerald-400 
+             hover:bg-lime-400 hover:text-black transition"
+    >
+       Back to Homepage
+    </a>
+  </div>
   </section>
 </section>

@@ -10,7 +10,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: 'twin-oaks',
-    title: 'Web Design & Branding',
+    title: 'Logo and Website Design',
     tag: 'Branding • Identity • Web Design',
     image: '../images/projects/twin-oaks.png',
     color: '#59D6FF',

@@ -2,11 +2,15 @@
 @plugin "@tailwindcss/typography";
 
 .prose h2 {
-  @apply mt-12 mb-6 text-2xl font-bold text-emerald-300;
+  @apply mt-6 mb-0 text-2xl font-bold text-lime-400;
 }
 .prose p, .prose ul, .prose ol {
-  @apply mb-6;
+  @apply mb-0;
 }
 .prose li {
   @apply mb-2;
+}
+
+.prose a {
+  @apply text-lime-400 hover:underline hover:text-white;
 }
