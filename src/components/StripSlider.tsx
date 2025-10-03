@@ -25,19 +25,18 @@ const scrollByPanels = (dir: 1 | -1) => {
           <a
             key={p.id}
             href={p.url ?? '#'}
-            className="relative h-[70%] aspect-square md:aspect-[3/4] shrink-0 snap-start 
-             overflow-hidden rounded-2xl"
+            className="group relative h-[70%] aspect-square md:aspect-[3/4] shrink-0 snap-start overflow-hidden rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30"
           >
             <img
               src={p.image}
               alt={p.title}
-              className="absolute inset-0 h-full w-full object-cover"
+              className="absolute inset-0 h-full w-full object-cover transform-gpu  transition-transform duration-500 ease-out  group-hover:scale-[1.04]"
             />
             <div
-              className="absolute inset-0 opacity-80 mix-blend-multiply"
+              className="absolute inset-0 opacity-80 mix-blend-multiply  transition-opacity duration-300 ease-out  group-hover:opacity-40"
               style={{ backgroundColor: p.color ?? '#111' }}
             />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/10 to-black/60" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-b  from-black/10 to-black/60 transition-opacity duration-300  group-hover:from-black/0 group-hover:to-black/40" />
             <div className="absolute bottom-8 left-6 right-6 text-white">
               <h3 className="text-lg font-medium">{p.title}</h3>
               <div className="mt-1 h-px w-10 bg-white/60" />

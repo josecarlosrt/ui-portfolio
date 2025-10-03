@@ -25,27 +25,27 @@ export const projects: Project[] = [
     url: '/projects/burger-bar'
   },
   {
-    id: 'bo',
-    title: 'Website Redesign',
-    tag: 'Product • Photo',
-    image: '../images/three.jpg',
-    color: '#00e676',
-    url: '#'
-  },
-  {
-    id: 'no',
-    title: 'Bang & Olufsen',
-    tag: 'Product • Photo',
-    image: '../images/two.jpg',
+    id: 'wellness',
+    title: 'Shopify Redesign',
+    tag: 'Development • Design',
+    image: '../images/projects/wellness.png',
     color: '#B159FF',
-    url: '#'
+    url: 'projects/wellness'
   },
   {
-    id: 'yes',
-    title: 'Bang & Olufsen',
-    tag: 'Product • Photo',
-    image: '../images/three.jpg',
+    id: 'Transmundo',
+    title: 'Website Mockup',
+    tag: 'UI • UX',
+    image: '../images/projects/transmundo.png',
+    color: '#00e676',
+    url: '/projects/transmundo'
+  },
+  {
+    id: 'design-audit',
+    title: 'Design Audit',
+    tag: 'UI • UX',
+    image: '../images/projects/snapshot.jpg',
     color: '#b2ff59',
-    url: '#'
+    url: '/projects/snapshot'
   }
 ]
