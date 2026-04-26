@@ -6,7 +6,7 @@
 }
 
 .prose h2 {
-  @apply mt-6 mb-0 text-2xl font-bold text-lime-400;
+  @apply mt-6 mb-0 text-2xl font-bold text-gray-300;
 }
 .prose p, .prose ul, .prose ol {
   @apply mb-0;
@@ -16,7 +16,7 @@
 }
 
 .prose a {
-  @apply text-lime-400 hover:underline hover:text-white;
+  @apply text-white underline hover:text-gray-300;
 }
 
 @keyframes textReveal {
