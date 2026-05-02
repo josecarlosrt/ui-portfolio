@@ -11,25 +11,25 @@ export const projects: Project[] = [
   {
     id: 'Transmundo',
     title: 'Transmundo',
-    tag: 'UI • UX • Website Mockup',
-    image: '../images/projects/transmundo.png',
+    tag: 'UI • UX • Wordpress Development',
+    image: '../images/projects/tm-cover.webp',
     color: '#00e676',
     url: '/projects/transmundo'
   },
   {
     id: 'snapshot',
     title: 'Snapshot',
-    tag: 'UI • UX • Design Audit',
+    tag: 'UI • UX • Webflow Design Audit',
     image: '../images/projects/snapshot.jpg',
     color: '#b2ff59',
     url: '/projects/snapshot'
   },
   {
-    id: 'iwire',
-    title: 'iWire',
-    tag: 'UI • UX • Web Design',
+    id: 'vitality',
+    title: 'Vitality Physical Therapy',
+    tag: 'UI • UX • Webflow Design',
     image: '../images/projects/iwire-cover.png', // Fallback to an existing image if iWire is missing
     color: '#59D6FF',
-    url: '/projects/iwire'
+    url: '/projects/vitality'
   }
 ]
