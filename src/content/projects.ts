@@ -28,8 +28,16 @@ export const projects: Project[] = [
     id: 'vitality',
     title: 'Vitality Physical Therapy',
     tag: 'UI • UX • Webflow Design',
-    image: '../images/projects/iwire-cover.png', // Fallback to an existing image if iWire is missing
+    image: '../images/projects/vt-cover.webp', // Fallback to an existing image if iWire is missing
     color: '#59D6FF',
     url: '/projects/vitality'
+  },
+  {
+    id: 'disalco',
+    title: 'Disalco',
+    tag: 'UI • UX • Wordpress Development',
+    image: '../images/projects/disalco-cover.webp',
+    color: '#b2ff59',
+    url: '/projects/disalco'
   }
 ]
