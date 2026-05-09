@@ -18,17 +18,21 @@ function ProjectItem({ project, index }: { project: Project; index: number }) {
   const textY = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [50, 0, 0, -50])
 
   return (
-    <div ref={ref} className="min-h-screen w-full flex items-center justify-center relative overflow-hidden py-24">
+    <div ref={ref} className="w-full flex items-center justify-center relative overflow-hidden py-40">
       <div className="w-full max-w-6xl mx-auto px-6 md:px-12 flex flex-col items-center">
         
         {/* Image Container */}
         <motion.div 
-          className="w-full aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-2xl md:rounded-3xl relative mb-10 shadow-2xl border border-white/5"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
+          className="group w-full aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-2xl md:rounded-3xl relative mb-12 shadow-2xl bg-white/5 border border-white/10 backdrop-blur-md hover:border-white/20 transition-colors duration-500"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          whileHover={{ scale: 1.05 }}
         >
+          {/* Spotlight Effect div that fades in on hover */}
+          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.08)_0%,transparent_70%)] transition-opacity duration-500 pointer-events-none z-10" />
+          
           <motion.img 
             src={project.image} 
             alt={project.title}
@@ -43,10 +47,10 @@ function ProjectItem({ project, index }: { project: Project; index: number }) {
           className="w-full text-center md:text-left flex flex-col md:flex-row md:justify-between md:items-end"
         >
           <div>
-            <h2 className="text-3xl md:text-5xl font-medium tracking-tight mb-3">
+            <h2 className="text-3xl md:text-5xl font-medium tracking-tight mb-3 text-white">
               {project.title}
             </h2>
-            <p className="text-neutral-400 text-sm md:text-base tracking-wide uppercase font-medium">
+            <p className="text-zinc-400 text-sm md:text-base tracking-wide uppercase font-medium">
               {project.tag}
             </p>
           </div>
@@ -54,7 +58,7 @@ function ProjectItem({ project, index }: { project: Project; index: number }) {
           <div className="mt-6 md:mt-0">
             <a 
               href={project.url}
-              className="inline-flex items-center text-sm font-medium uppercase tracking-widest hover:text-neutral-300 transition-colors"
+              className="inline-flex items-center text-sm font-medium uppercase tracking-widest text-zinc-400 hover:text-white transition-colors"
             >
               View Case Study
               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
