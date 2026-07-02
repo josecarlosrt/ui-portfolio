@@ -1,0 +1,81 @@
+---
+layout: ../../layouts/ProjectLayout.astro
+title: "Space Media"
+date: "2026-07-01"
+role: "Designer & Developer"
+client: "Space Media (Own Agency)"
+tools: ["Figma", "Three.js", "JavaScript", "Netlify", "Claude Code"]
+images:
+  - "/images/projects/space-1.webp"
+  - "/images/projects/space-2.webp"
+---
+
+# Space Media: Designing and Building an Agency From Scratch
+
+## Context
+Space Media is the creative agency I'm co-building with my brother, a
+two-person studio pairing design with AI-accelerated engineering. Unlike
+client work, this project had no existing brief to react to: I owned the
+brand, the design system, and the build end to end, using it as a
+deliberate showcase of how I work when I'm not translating someone else's
+constraints, design taste and production-ready code, moving fast without
+losing craft.
+
+## Goals
+- **A Distinctive Visual Identity:** Move past generic "dark mode SaaS"
+  territory into something that felt genuinely spatial, a dark,
+  cosmic palette anchored by the brand's Saturn mark, not just a color
+  swap on a template.
+- **A Design System Built for Handoff:** Define color variables, a
+  two-voice typographic system, and reusable components in Figma that
+  map 1:1 to real CSS variables and component structure in code — no
+  drift between design and build.
+- **AI-Accelerated, Not AI-Generated:** Use Claude Code to move quickly
+  through the mechanical parts of the build — 3D scene setup, responsive
+  scaffolding — while every design decision stayed deliberate and
+  reviewed, not auto-generated.
+
+## Process
+
+### 1. A Design System Extracted From the Mark
+I built the system outward from the Space Media logo itself, sampling
+its exact colors programmatically rather than eyeballing a match — a
+deep void background (#0C081F) and a violet signal accent (#7C45F3)
+that anchors every interactive element. Typography splits into two
+voices: Space Grotesk for headlines and body copy, and Space Mono for
+labels, navigation, and eyebrow text — a nod to the brand's technical,
+"space program" tone.
+
+![Space Media Figma design system: color tokens, typography, and components](/images/projects/space-3.webp)
+
+### 2. A 3D Hero, Built With AI-Accelerated Code
+The centerpiece is a Three.js hero scene — a rotating Saturn with a
+double-layer ring, ambient starfield, and subtle mouse-driven parallax,
+echoing the tilted ring and star marks from the logo. Writing WebGL
+scene setup by hand is tedious and repetitive; I used Claude Code to
+generate the initial Three.js scaffolding — geometry, lighting, and the
+animation loop — then reviewed and refined it by hand: tuning the tilt
+angle to match the brand mark, adjusting light color to pick up the
+violet accent, and tying the ring opacity to the rest of the palette.
+
+### 3. From Figma to Production, Kept in Sync
+Every component — navbar, hero, capability cards, the process
+timeline — was built directly from the Figma system's token values, so
+color, radius, and spacing in code match the design file exactly. The
+site ships with scroll-triggered reveals, a mobile navigation pattern,
+and full responsive behavior down to small screens, all connected to
+GitHub with automatic deploys through Netlify.
+
+## Outcome
+Space Media went from an early brand mark to a fully designed, coded,
+and deployed agency site — the clearest example in my portfolio of the
+full loop I bring to client work: a real Figma design system, a
+production build that matches it exactly, and AI tooling used to
+accelerate implementation without replacing design judgment.
+
+---
+
+### Project Showcase
+*Status: Design System & Site — live and continuing to evolve.*
+- **Live Site:** [Visit Space Media](https://space-media-agency.netlify.app/)
+- **Figma Design System:** [View on Figma](https://www.figma.com/design/lP0Q9pFoJ5SIfIyXZkN51K/Space-Media?node-id=0-1)
