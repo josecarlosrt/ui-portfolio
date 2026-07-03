@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import AboutContent from '../components/AboutContent';
+---
+
+<Layout
+  title="About — Jose Rivera | UX/UI Designer & Developer"
+  description="Bilingual UX/UI designer and front-end developer with 9+ years bridging design and code. Figma to production in React, Astro, Webflow, WordPress, and Shopify."
+>
+  <Header />
+  <main>
+    <AboutContent client:load />
+  </main>
+  <Footer />
+</Layout>

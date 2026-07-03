@@ -1,40 +1,67 @@
 ---
 layout: ../../layouts/ProjectLayout.astro
-title: "Travel Agency Website Redesign Concept"
-date: "2020-09-30"
-role: "Web Design"
-client: "Transmundo"
-tools: ["Figma", "Illustrator"]
+title: "Transmundo: UX Redesign for a Travel Agency"
+date: "2025-11-30"
+role: "UX/UI Design & Development"
+client: "Transmundo HN"
+tools: ["Figma", "Illustrator", "WordPress", "HTML/CSS/JS"]
 images:
   - "/images/projects/tm-cover.webp"
-  - "/images/projects/tm-1.webp"
-  - "/images/projects/tm-2.webp"
   - "/images/projects/tm-3.webp"
-summary: "I was tasked with conceptualizing a full website redesign for a travel agency aiming to modernize its digital presence and incorporate innovative technology."
+summary: "A full UX redesign and rebuild for a Honduran travel agency: auditing a confusing legacy site, restructuring the information architecture around the traveler's journey, and shipping a fast, conversion-focused WordPress site with an AI-powered trip planning form."
 ---
 
-# Transmundo: Wordpress Redesign
+# Transmundo: Redesigning the Path from "Where Should I Go?" to "Booked"
 
-## Discovery & Research
-Transmundo, a travel agency based in Honduras, required a website redesign to modernize the user experience, prepare for an upcoming launch, and ultimately improve conversion rates. While the agency provided creative freedom, the core challenge was translating minimal, concise inputs into a cohesive platform. A key functional requirement was to integrate an interactive and easy-to-use quick form powered by AI , which required a strategic UX approach to reduce friction in the travel planning process.
+**Designed and built by me, from UX audit and wireframes in Figma to a production WordPress build.**
 
-## Findings
-The original site suffered from an inverted visual hierarchy and high cognitive load. The primary user goal (finding travel solutions) was overshadowed by internal company directories, resulting in a confusing user journey, dead ends, and a rigid layout that alienated mobile users.
+## The Problem
 
-## Visual Direction
-The client prefers a clean and modern site that combines elements such as boxes with rounded edges, blur effects, and subtle animations. They really liked the round boxes and blur usage on Avianca’s site(avianca.com). Also, inspiration was drawn from a Dribble shot(dribbble), with a specific request for a homepage hero image that utilizes a card-style presentation to immediately grab the user's attention.
+Transmundo, a travel agency based in Honduras, was preparing for a relaunch, but their existing website was working against them. Visitors arrived looking for travel solutions and instead landed on a site organized around the company's internal structure — directories and departmental content overshadowed the one thing users actually came to do: plan a trip.
 
-## Other Visual Direction
-The design must prominently feature their Instagram page, making it a central element of the user experience. The brand's color scheme, specifically using "blocks of blue," must be integrated consistently across other pages.
+The business goal was clear: **modernize the experience and improve conversion rates**. The UX challenge underneath it: rebuild the site around the traveler's journey instead of the company's org chart, and integrate an **AI-powered quick form** that makes requesting a trip feel effortless rather than like paperwork.
 
-## UX Strategy
-Our UX strategy prioritizes a seamless, intuitive path from discovery to booking, ensuring that the visual aesthetic directly supports usability. The information architecture was engineered to funnel users efficiently, relying on a modern, minimalist design with an intentional use of white space to showcase brand colors and convey confidence.
+## UX Audit of the Legacy Site
 
-## Core Pillars
-1. **Conversion-Centric Flow:** The primary goal of the structural redesign is to remove usability barriers and improve conversion rates.
-2. **Performance as UX:** We placed a high priority on Core Web Vitals metrics, recognizing that fast load times and technical stability are fundamental to a positive modern user experience.
-3. **Search Engine Synergy:** The wireframes and underlying structure were designed with search engine optimization (AEO) and structured technical SEO (including schema and sitemaps) in mind to capture high-intent search traffic.
+Before designing anything, I ran a heuristic evaluation of the existing site. Three failure patterns stood out:
 
-### Live Staging Site
-You can see the live staging site here:
-[Live Site](https://staging.transmundohn.com/)
+1. **Inverted visual hierarchy.** The most prominent elements on the page served internal company needs, while the primary user goal — finding travel options — was buried. Users had to work to find the product.
+2. **High cognitive load and dead ends.** Navigation paths frequently led to pages with no clear next step. There was no consistent funnel from "I'm curious about a destination" to "I've contacted the agency."
+3. **A rigid, desktop-first layout.** The fixed layout broke down on small screens, effectively alienating mobile users — the majority of the audience for travel inspiration browsing.
+
+![Transmundo Audit](/images/projects/tm-1.webp)
+
+These findings became the checklist the redesign had to answer for.
+
+## Translating Stakeholder Vision into Design Principles
+
+The client gave me broad creative freedom with a few concrete references: they gravitated toward Avianca's use of rounded cards and blur effects, a card-style hero concept from a Dribbble shot, their signature "blocks of blue" brand color, and a strong desire to make their active Instagram presence part of the experience.
+
+Rather than applying these as surface styling, I translated each preference into a functional design decision:
+
+- **Rounded cards and blur** became the core content unit of the system — destination cards, offer cards, and the hero itself — giving the site a consistent, scannable rhythm instead of decorative one-offs.
+- **The card-style hero** doubles as an entry point into the trip-planning funnel, not just a visual moment: attention lands there first, and the primary CTA lives inside it.
+- **"Blocks of blue"** were systematized into a defined palette with usage rules, so brand color reads as intentional structure across pages rather than scattered accents.
+- **Instagram integration** was placed as social proof within the conversion flow — real trips, real travelers — reinforcing trust exactly where users hesitate.
+
+## UX Strategy & Information Architecture
+
+The redesigned IA funnels users along a single, intentional path: **discover → explore → plan → contact.** Every page answers "what's my next step?" — directly eliminating the dead ends found in the audit. A minimalist layout with deliberate white space keeps cognitive load low and lets the brand's blue system carry visual identity without competing with content.
+
+The centerpiece of the funnel is the **AI-powered quick form**: instead of a long, intimidating request form, users answer a short, conversational set of inputs to start planning a trip. The goal was to collapse the distance between "browsing" and "talking to the agency" into under a minute.
+
+## Performance and Findability as UX
+
+Two pillars of the build treated technical quality as part of the user experience, not an afterthought:
+
+- **Performance as UX.** I prioritized Core Web Vitals from the wireframe stage — image strategy, layout stability, and load behavior were design decisions, not post-launch fixes.
+- **Search synergy.** The page structure was designed hand-in-hand with technical SEO and answer-engine optimization (AEO) — schema markup, sitemaps, and heading structures built to capture high-intent searches like "agencia de viajes Honduras."
+
+This is where designing and building as the same person pays off: the wireframes were drawn with real implementation constraints in mind, so nothing was lost in handoff — because there was no handoff.
+
+## Outcome
+
+The redesigned site is live on staging and moving toward launch: a mobile-first, conversion-focused platform where the traveler's goal is the visual and structural priority on every page.
+
+### See It Live
+[View the staging site →](https://staging.transmundohn.com/)
