@@ -80,7 +80,7 @@ const steps = [
   {
     num: '02',
     heading: 'Design the system',
-    body: 'Tokens, components, and responsive layouts in Figma — built to be implemented, not just admired.',
+    body: 'Tokens, components, and responsive layouts in Figma, built to be implemented, not just admired.',
   },
   {
     num: '03',
@@ -93,15 +93,15 @@ const steps = [
 const path = [
   {
     heading: 'From pixels to systems',
-    body: 'I started in graphic design and spent my early career producing websites at high volume — at one point shipping a site per day. That pace taught me two things: strong visual fundamentals under pressure, and that good systems beat heroic effort every time.',
+    body: 'I started in graphic design and spent my early career producing websites at high volume, at one point shipping a site per day. That pace taught me two things: strong visual fundamentals under pressure, and that good systems beat heroic effort every time.',
   },
   {
     heading: 'Leading design at scale',
-    body: 'At PartnerHero I led a team of 12 web professionals, running design reviews, UX/UI audits, and technical QA. I built and maintained the design systems, component libraries, and style guides that kept a high-volume operation consistent — and learned how to give feedback that makes work better without slowing it down.',
+    body: 'At PartnerHero I led a team of 12 web professionals, running design reviews, UX/UI audits, and technical QA. I built and maintained the design systems, component libraries, and style guides that kept a high-volume operation consistent, and learned how to give feedback that makes work better without slowing it down.',
   },
   {
     heading: 'Designing what I build, building what I design',
-    body: 'Today I focus on UX/UI work end to end: auditing existing experiences, restructuring information architecture around user goals, designing systems in Figma, and implementing them in production code. Performance is part of the design — I treat Core Web Vitals, accessibility, and technical SEO as UX decisions, not afterthoughts.',
+    body: 'Today I focus on UX/UI work end to end: auditing existing experiences, restructuring information architecture around user goals, designing systems in Figma, and implementing them in production code. Performance is part of the design, I treat Core Web Vitals, accessibility, and technical SEO as UX decisions, not afterthoughts.',
   },
 ]
 
@@ -183,7 +183,7 @@ export default function AboutContent() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease, delay: 0.2 }}
             >
-              I'm a bilingual UX/UI designer and front-end developer from San Pedro Sula, Honduras, with 9+ years bridging the gap between design and code. I create design systems in Figma and ship them myself in React, Astro, WordPress, and Shopify — which means no handoff friction, no "that's not what the mockup looked like," and interfaces that are designed with real implementation constraints in mind.
+              I'm a bilingual UX/UI designer and front-end developer from San Pedro Sula, Honduras, with 9+ years bridging the gap between design and code. I create design systems in Figma and ship them myself in React, Astro, WordPress, and Shopify, which means no handoff friction, no "that's not what the mockup looked like," and interfaces that are designed with real implementation constraints in mind.
             </motion.p>
           </div>
         </div>
@@ -318,9 +318,7 @@ export default function AboutContent() {
               Beyond the Screen
             </h2>
             <p className="text-base md:text-lg text-zinc-400 font-light leading-relaxed max-w-3xl">
-              When I'm not designing or shipping, I'm training for a half marathon or co-building{' '}
-              <span className="text-white font-medium">Space Media</span>, a creative agency I run
-              with my brother. I work in English and Spanish, often in the same sentence.
+              When I'm not designing or shipping, I'm probably at home watching YouTube videos or just chatting with my wife, getting tackled by our four boxer dogs, or out training for a half marathon. Beyond that, I'm co-building <span className="text-white font-medium">Space Media</span>, a creative agency I run with my brother. I work in English and Spanish, often in the same sentence.
             </p>
           </motion.div>
         </div>
