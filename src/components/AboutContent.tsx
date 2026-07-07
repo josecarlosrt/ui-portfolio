@@ -356,7 +356,7 @@ export default function AboutContent() {
           >
             {/* Primary — matches the site's existing filled white button */}
             <a
-              href="mailto:josecarlosrt7@gmail.com"
+              href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-black font-medium rounded-full hover:bg-neutral-200 transition-colors duration-300"
             >
               Get in touch

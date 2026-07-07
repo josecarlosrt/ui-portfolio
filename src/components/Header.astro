@@ -9,6 +9,6 @@
   <nav class="flex gap-8 text-sm font-medium tracking-wide">
     <a href="/#work" class="text-zinc-400 hover:text-white transition-colors">Work</a>
     <a href="/about" class={`hover:text-white transition-colors ${Astro.url.pathname === '/about' ? 'text-white' : 'text-zinc-400'}`}>About</a>
-    <a href="mailto:josecarlosrt7@gmail.com" class="text-zinc-400 hover:text-white transition-colors">Contact</a>
+    <a href="/contact" class={`hover:text-white transition-colors ${Astro.url.pathname.startsWith('/contact') ? 'text-white' : 'text-zinc-400'}`}>Contact</a>
   </nav>
 </header>

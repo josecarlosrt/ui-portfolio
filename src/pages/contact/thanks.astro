@@ -1,0 +1,30 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="Message sent — Jose Rivera | UX/UI Designer & Developer"
+  description="Thanks for reaching out — I'll get back to you within 24 hours."
+  noindex
+>
+  <Header />
+  <main class="relative z-10 min-h-screen px-6 md:px-12 pt-36 md:pt-44 pb-24">
+    <div class="max-w-xl mx-auto">
+      <h1 class="text-4xl md:text-5xl font-medium tracking-tighter text-white mb-4">
+        Message sent.
+      </h1>
+      <p class="text-lg text-zinc-400 font-light leading-relaxed mb-12">
+        Thanks for reaching out — I'll get back to you within 24 hours. In the meantime, feel free to keep exploring my work.
+      </p>
+      <a
+        href="/#work"
+        class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-white text-black font-medium rounded-full hover:bg-neutral-200 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a]"
+      >
+        Back to projects
+      </a>
+    </div>
+  </main>
+  <Footer />
+</Layout>

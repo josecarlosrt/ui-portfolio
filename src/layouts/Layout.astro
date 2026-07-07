@@ -3,10 +3,12 @@ import "../styles/global.css";
 interface Props {
 	title?: string;
 	description?: string;
+	noindex?: boolean;
 }
 const {
 	title = "Jose Rivera UI Portfolio",
 	description = "Senior UX/UI Designer & Front-End Developer. I bridge the gap between design and development.",
+	noindex = false,
 } = Astro.props;
 ---
 
@@ -24,6 +26,7 @@ const {
 		/>
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description} />
+		{noindex && <meta name="robots" content="noindex" />}
 		<title>{title}</title>
 	</head>
 	<body
