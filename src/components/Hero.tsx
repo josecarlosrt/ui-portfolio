@@ -10,7 +10,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
-          Senior UX/UI Designer & Front-End Developer
+          Senior UX/UI Designer & Web Developer
         </motion.h1>
         
         <motion.p 
@@ -19,7 +19,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
         >
-I bridge the gap between design and development by building my own Figma systems into flawless code. React, Astro, Webflow. No handoff friction
+I bridge the gap between design and development by building my own Figma systems into flawless code. React, Astro, Wordpress, Shopify, and Webflow. No handoff friction
         </motion.p>
 
         <motion.div
